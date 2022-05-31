@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  5% 49/1000 [01:00<19:33,  1.23s/it]
+Traceback (most recent call last):
+  File "train_ddpm_cont.py", line 11, in <module>
+    diffusion.train()
+  File "/content/drive/My Drive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 199, in train
+    self.snapshot()
+  File "/content/drive/My Drive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 313, in snapshot
+    images = self.sample_images(self.config.training.snapshot_batch_size, labels=labels).cpu()
+  File "/content/drive/My Drive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 301, in sample_images
+    pred_images, unn = self.diff_eq_solver.step(pred_images, t, labels)
+  File "/content/drive/My Drive/Colab Notebooks/ddpm_hw_clean/ddpm_sde.py", line 136, in step
+    drift, diff = self.rsde.sde(x, t, y)
+  File "/content/drive/My Drive/Colab Notebooks/ddpm_hw_clean/ddpm_sde.py", line 100, in sde
+    part_to_det = diffusion**2 * prod
+UnboundLocalError: local variable 'diffusion' referenced before assignment

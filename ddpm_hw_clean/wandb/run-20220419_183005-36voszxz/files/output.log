@@ -1,0 +1,9 @@
+  0% 0/50000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_ddpm_cont.py", line 11, in <module>
+    diffusion.train()
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 182, in train
+    loss = self.calc_loss(clean_x=X)
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 104, in calc_loss
+    part_noise_x, eps = self.sample_noise_x(clean_x, cur_t)
+AttributeError: 'DiffusionRunner' object has no attribute 'sample_noise_x'

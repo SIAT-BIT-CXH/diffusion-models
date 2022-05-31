@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 14% 137/1000 [09:14<58:13,  4.05s/it]
+Traceback (most recent call last):
+  File "train_ddpm_cont.py", line 11, in <module>
+    diffusion.train()
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 196, in train
+    self.optimizer_step(loss)
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 154, in optimizer_step
+    self.optimizer.step()
+  File "/usr/local/lib/python3.7/dist-packages/torch/optim/optimizer.py", line 88, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/torch/optim/adam.py", line 144, in step
+    eps=group['eps'])
+  File "/usr/local/lib/python3.7/dist-packages/torch/optim/_functional.py", line 87, in adam
+    exp_avg_sq.mul_(beta2).addcmul_(grad, grad.conj(), value=1 - beta2)
+KeyboardInterrupt

@@ -1,0 +1,18 @@
+
+
+
+
+
+
+
+
+
+
+
+  0% 19/10000 [00:23<3:23:47,  1.23s/it]
+Traceback (most recent call last):
+  File "train_ddpm_cont.py", line 11, in <module>
+    diffusion.train()
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 195, in train
+    self.log_metric('loss', 'train', loss.item())
+KeyboardInterrupt

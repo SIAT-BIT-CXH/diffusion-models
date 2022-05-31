@@ -1,0 +1,18 @@
+{
+    "os": "Linux-5.4.144+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.13",
+    "heartbeatAt": "2022-04-19T22:54:52.468659",
+    "startedAt": "2022-04-19T22:54:48.351066",
+    "docker": null,
+    "gpu": "Tesla K80",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train_noisy_classifier.py",
+    "codePath": "train_noisy_classifier.py",
+    "host": "8db9e92d9542",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}

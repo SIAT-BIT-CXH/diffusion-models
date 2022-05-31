@@ -1,0 +1,13 @@
+  0% 0/50000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_ddpm_cont.py", line 11, in <module>
+    diffusion.train()
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 193, in train
+    loss = self.calc_loss(clean_x=X)
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 115, in calc_loss
+    part_noise_x, eps = self.sample_x_with_n(clean_x, cur_t)
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/diffusion.py", line 98, in sample_x_with_n
+    x_mean, x_std = self.sde.marginal_prob(clean_x, t)
+  File "/content/drive/MyDrive/Colab Notebooks/ddpm_hw_clean/ddpm_sde.py", line 42, in marginal_prob
+    mean = torch.exp(-(1/2) * integral).reshape(-1, 1, 1, 1) * x_0
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!
